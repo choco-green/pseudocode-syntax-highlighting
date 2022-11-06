@@ -1,0 +1,25 @@
+{
+  "name": "pseudocode-syntax-highlighting",
+  "displayName": "Pseudocode Syntax Highlighting",
+  "description": "Pseudocode syntax highlighting for OCR A-level Computer Science",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pseudocode",
+      "aliases": ["pseudocode", "pseudocode"],
+      "extensions": [".pseudocode"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pseudocode",
+      "scopeName": "source.pseudocode",
+      "path": "./syntaxes/pseudocode.tmLanguage.json"
+    }]
+  }
+}
